@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Trang Chủ</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="css/default.css" type="text/css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/popper.minjs"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery.validate.js"></script>
+  <script type="text/javascript" src="js/default.js"></script>
+
+
+
+  <script type="text/javascript">
+    $(document).ready(function chay() {
+                $(this).children("video").play();
+            });
+            
+
+  </script>
+</head>
+
+<body>
+<div class="slideshow">
+	<button id="prev" onClick="prev()">&#10094;</button>
+    <img id="img-slide" name="slide" src="picture/anh bia/anh bia 1.png"/>
+   	<button id="nextt" onClick="nextt()">&#10095;</button>
+	<ul>
+		<li class="dot"></li>
+		<li class="dot"></li>
+		<li class="dot"></li>
+		<li class="dot"></li>
+
+	</ul>
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+	<div class="container">
+		<a class="navbar-brand" href="index.html">
+    <img src="picture/logo-web.png"></a>
+		<ul class="navbar-nav">
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Áo Nam</a>
+			    <div class="dropdown-menu">
+			      <a class="dropdown-item" href="#">Áo Thun</a>
+			      <a class="dropdown-item" href="#">Áo Sơ Mi</a>
+			      <a class="dropdown-item" href="#">Áo Khoác</a>
+			    </div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Quần Nam</a>
+			    <div class="dropdown-menu">
+			      <a class="dropdown-item" href="quan-jean.html">Quần Jean</a>
+			      <a class="dropdown-item" href="quan-short.html">Quần Short</a>
+			      <a class="dropdown-item" href="quan-tay.html">Quần Tây</a>
+			    </div>
+		  	</li>
+			<li class="nav-item dropdown">
+			    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Phụ Kiện Nam</a>
+			    <div class="dropdown-menu">
+			      <a class="dropdown-item" href="non.html">Nón</a>
+			      <a class="dropdown-item" href="balo-tuixach.html">Balo-Túi Xách</a>
+			    </div>
+			</li>
+			<li class="nav-item dropdown">
+          <a class="nav-link" href="giay.html">Giày Dép</a>
+			</li>
+			<li class="nav-item dropdown">
+			    <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">Tài Khoản</a>
+
+			</li>
+			<li class="nav-item">
+			   	<a class="nav-link" href="lienhe.html">Liên Hệ</a>
+			</li>
+			<li>
+				<form class="form-inline" action="#">
+					<input class="form-control mr-sm-2" type="text" placeholder="Áo thun , Quần ....">
+					<button class="btn btn-success" type="submit">Search</button>
+				</form>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<div class="container">
+  <div class="timeline">
+    <div class="demo-card-wrapper">
+      <div class="demo-card demo-card--step10">
+          <div class="head">
+            <div class="number-box">
+              <span>4 May</span>
+            </div>
+            <h2><span class="small">Hot</span>Sản phẩm hot</h2>
+            </div>
+          <div class="body">
+            <p>Chính thức ra mắt set đồ hot nhất mùa hè này.</p>
+            <a href="products/quan-jean-msp-5.html"><video src="video/video2.mp4" onmouseover="play()"  poster="video/img-video2.png" controls class="video-responsive"></video></a>
+          </div>
+      </div>
+
+      
+
+      <div class="demo-card demo-card--step9">
+        <div class="head">
+          <div class="number-box">
+            <span>2 Mar</span>
+          </div>
+          <h2><span class="small">New</span>Áo sơ mi tay dài</h2>
+        </div>
+        <div class="body">
+          <p>Áo sơ mi nam tai dài mang lại sự phá cách, trang trọng.</p>
+          <a href="products/quan-jean-msp-2.html"><img src="picture/anh bia/anh bia 1.png" alt="Graphic"></a>
+        </div>
+      </div>
+
+      <div class="demo-card demo-card--step8">
+          <div class="head">
+            <div class="number-box">
+              <span>25 Mar</span>
+            </div>
+            <h2><span class="small">Sale</span>Giảm 50%</h2>
+            </div>
+          <div class="body">
+            <p>Nhân dịp 30/4 - 1/5 giảm 50% All sản phẩm</p>
+            <a href="products/quan-jean-msp-7.html"><video src="video/video1.mp4" onmouseover="play()"  poster="video/img-video1.png" controls class="video-responsive"></video></a>
+          </div>
+      </div>
+
+      <div class="demo-card demo-card--step7">
+        <div class="head">
+          <div class="number-box">
+            <span>15 Feb</span>
+          </div>
+          <h2><span class="small">Hot</span>The New 2018</h2>
+        </div>
+        <div class="body">
+          <p>Sản phẩm gây hot 2018.</p>
+          <a href="products/quan-jean-msp-5.html"><video src="video/video3.mp4" onmouseover="play()"  poster="video/img-video3.png" controls class="video-responsive"></video></a>
+        </div>
+      </div>
+      <div class="demo-card demo-card--step3">
+        <div class="head">
+          <div class="number-box">
+            <span>05 Jan</span>
+          </div>
+          <h2><span class="small">Sale</span>Giảm Giá 20%</h2>
+        </div>
+        <div class="body">
+          <p>The raw flight project <br> Quầy Tây Nam</p>
+          <a href="products/quan-jean-msp-2.html"><img src="picture/anh bia/anh bia 2.png" alt="Graphic"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <div class="panel-heading">
+             <div class="panel-title text-center">
+               <a href="../index.html"><h1 class="title">Fashion T&D</h1></a>
+
+
+             </div>
+           </div>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <div class="modal-body">
+          <div class="main-login main-center">
+          <form class="form-horizontal" id="fr-dang-nhap">
+            <div class="form-group">
+              <label for="username" class="cols-sm-2 control-label">Tài Khoản</label>
+              <div class="cols-sm-10">
+                <div class="input-group mb-3">
+                     <input type="text" name="txtusername" class="form-control" placeholder="Nhập tài khoản" aria-label="Username" aria-describedby="basic-addon1">
+               </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="password" class="cols-sm-2 control-label">Mật Khẩu</label>
+              <div class="cols-sm-10">
+                <div class="input-group mb-3">
+                  <input type="password" name="txtpassword" class="form-control" placeholder="Nhập mật khẩu" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+            </div>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-success btn-lg btn-block login-button">Sign in</button>
+            </div>
+            <div class="form-group">
+            <a href="https://accounts.google.com/signin/v2/sl/pwd?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="btn btn-lg btn-block btn btn-social btn-google">
+              <span class="fa fa-google"></span> Sign in with google
+            </a>
+              <a  href="https://www.facebook.com"class="btn btn-lg btn-block  btn-social btn-facebook">
+                <span class="fa fa-facebook"></span> Sign in with facebook
+              </a>
+            </div>
+            <div class="form-group">
+              <div class="row">
+              <a   href="" data-dismiss="modal" data-toggle="modal" data-target="#myModal1" class="col-sm-5 col-md-6 text-left">Đăng Kí</a>
+              <a href=""data-dismiss="modal" data-target="#myModal2" data-toggle="modal" class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0 text-right">Quên Mật Khẩu</a>
+            </div>
+            </div>
+          </form>
+        </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+<div class="modal fade" id="myModal1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="panel-heading">
+               <div class="panel-title text-center">
+                 <a href="../index.html"><h1 class="title">Fashion T&D</h1></a>
+               </div>
+             </div>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="main-login main-center">
+            <form class="form-horizontal" id="fr-dang-ky">
+              <div class="form-group">
+                <label for="username" class="cols-sm-2 control-label">Tài Khoản</label>
+                <div class="cols-sm-10">
+                  <div class="input-group mb-3">
+                       <input type="text" name="txtusername" class="form-control" placeholder="Nhập tài khoản" aria-label="Username" aria-describedby="basic-addon1">
+                 </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="password" class="cols-sm-2 control-label">Mật Khẩu</label>
+                <div class="cols-sm-10">
+                  <div class="input-group mb-3">
+                    <input type="password" id="txtpassword" name="txtpassword" class="form-control" placeholder="Nhập mật khẩu" aria-label="" aria-describedby="basic-addon1">
+                  </div>
+                  <label for="password" class="cols-sm-2 control-label">Nhập Lại Mật Khẩu</label>
+                <div class="cols-sm-10">
+                  <div class="input-group mb-3">
+                    <input type="password" name="txtrepassword" class="form-control" placeholder="Nhập lại mật khẩu" aria-label="" aria-describedby="basic-addon1">
+                  </div></div>
+              </div>
+              <div class="form-group">
+              </div>
+              </div>
+              <div class="form-group">
+                <label for="password" class="cols-sm-2 control-label">Email</label>
+                <div class="cols-sm-10">
+                  <div class="input-group mb-3">
+                  
+                    <input type="text" name="txtemail" class="form-control" placeholder="Nhập email" aria-label="" aria-describedby="basic-addon1">
+                  </div>
+              </div>
+              </div>
+              <div class="form-group">
+                <label for="password" class="cols-sm-2 control-label">Số điện thoại</label>
+                <div class="cols-sm-10">
+                  <div class="input-group mb-3">
+                  
+                    <input type="text" name="txtphone" class="form-control" placeholder="Nhập số điện thoại" aria-label="" aria-describedby="basic-addon1">
+                  </div>
+              </div>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-success btn-lg btn-block login-button">Đăng ký</button>
+              </div>
+
+              <div class="form-group">
+                <div class="row">
+                <a  href="" data-dismiss="modal" data-target="#myModal2" data-toggle="modal" class="col-sm-5 col-md-6 text-left">Quên mật khẩu</a>
+                <a href="" data-dismiss="modal" data-target="#myModal" data-toggle="modal" class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0 text-right">Đăng nhập</a>
+              </div>
+              </div>
+            </form>
+          </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+</div>
+<div class="modal fade" id="myModal2">
+          <div class="modal-dialog">
+            <div class="modal-content">
+
+       
+              <div class="modal-header">
+                <div class="panel-heading">
+                   <div class="panel-title text-center">
+                     <a href="../index.html"><h1 class="title">Fashion T&D</h1></a>
+                   </div>
+                 </div>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+
+
+              <div class="modal-body">
+                <div class="main-login main-center">
+                <form class="form-horizontal" id="fr-quen-mat-khau">
+
+                  <div class="form-group">
+                    <label for="password" class="cols-sm-2 control-label">Email</label>
+                    <div class="cols-sm-10">
+                      <div class="input-group mb-3">
+                        <input type="text" name="txtemail" class="form-control" placeholder="Nhập email" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                  </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="password" class="cols-sm-2 control-label">Số điện thoại</label>
+                    <div class="cols-sm-10">
+                      <div class="input-group mb-3">
+                      
+                        <input type="text" name="txtphone" class="form-control" placeholder="Nhập số điện thoại" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                  </div>
+                  </div>
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-success btn-lg btn-block login-button">Gửi</button>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="row">
+                    <a href="" data-dismiss="modal" data-target="#myModal" data-toggle="modal" class="col-sm-5 col-md-6 text-left">Đăng Nhập</a>
+                    <a href="" data-dismiss="modal" data-target="#myModal1" data-toggle="modal" class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0 text-right">Đăng kí</a>
+                  </div>
+                  </div>
+                </form>
+              </div>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+</div>
+
+<footer>
+	   	<div class="footera">
+			 <p>Kết nối với chúng tôi</p>
+			   <ul>
+				  <li><a class="iconsfooter" href="https://www.facebook.com/nguyenduy170898"><i class="fa fa-facebook"></i></a></li>
+				  <li><a class="iconsfooter" href="https://www.instagram.com/__otiboi/"><i class="fa fa-instagram"></i></a></li>
+				  <li><a class="iconsfooter" href="https://www.youtube.com"><i class="fa fa-youtube"></i></a></li>
+			   </ul>
+		  </div>
+
+    
+		<div class="footerc">
+			<div class="coppy-right">
+				<p>Copyright © 2018 Enter. Design by <a href="https://www.facebook.com/nguyenduy170898">Nguyễn Thành Duy</a> & <a href="https://www.facebook.com/aksahihi">Nguyễn Ngọc Thành</a>.
+				</p>
+			</div>
+			<div class="go-to-top">
+				<p><a href="#" >
+				&uarr; LÊN TRANG ĐẦU
+				</a></p>
+			</div>
+    </div>
+</footer>
+
+</body>
+</html>

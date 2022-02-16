@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Quần Short 3</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="../css/default.css" type="text/css" rel="stylesheet">
+  <link href="../css/bootstrap.min.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" type="text/css">
+  <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="../js/popper.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.validate.js"></script>
+  <script type="text/javascript" src="../js/default.js"></script>
+</head>
+
+<body>
+<div class="slideshow">
+	<button id="prev" onClick="prev()">&#10094;</button>
+    <img id="img-slide" name="slide" src="../picture/anh bia/anh bia 1.png"/>
+   	<button id="nextt" onClick="nextt()">&#10095;</button>
+	<ul>
+		<li class="dot"></li>
+		<li class="dot"></li>
+		<li class="dot"></li>
+		<li class="dot"></li>
+
+	</ul>
+</div>
+<script type="text/javascript">
+	var count=0;
+    var mang_anh=[];
+    mang_anh[0]='../picture/anh bia/anh bia 1.png';
+    mang_anh[1]='../picture/anh bia/anh bia 2.png';
+    mang_anh[2]='../picture/anh bia/anh bia 3.png';
+    mang_anh[3]='../picture/anh bia/anh bia 4.png';
+    function nextt(){
+        count++;
+        if(count > 3){
+            count=0;
+        }
+        document.images['slide'].src=mang_anh[count];
+        $("li").removeClass('active'); // khi mình next thì li có hiệu ứng class sẽ bị mất
+        $("li").eq(count).addClass('active');//tương tự khi next thì addClass vào li tiếp theo
+    }
+    function prev(){
+        count--;
+        if(count < 0){
+            count=3;
+        }
+        document.images['slide'].src=mang_anh[count];
+        $("li").removeClass('active');
+        $("li").eq(count).addClass('active');
+    }
+    setInterval(function(){
+        next();
+        
+        },2000)
+</script>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+	<div class="container">
+		<a class="navbar-brand" href="../index.html"><img src="../picture/logo-web.png"></a>
+		<ul class="navbar-nav">
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Áo Nam</a>
+			    <div class="dropdown-menu">
+			      <a class="dropdown-item" href="../ao-thun.html">Áo Thun</a>
+			      <a class="dropdown-item" href="../ao-somi">Áo Sơ Mi</a>
+			      <a class="dropdown-item" href="../ao-khoac">Áo Khoác</a>
+			    </div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Quần Nam</a>
+			    <div class="dropdown-menu">
+			      <a class="dropdown-item" href="../quan-jean.html">Quần Jean</a>
+			      <a class="dropdown-item" href="../quan-short.html">Quần Short</a>
+			      <a class="dropdown-item" href="../quan-tay.html">Quần Tây</a>
+			    </div>
+		  	</li>
+			<li class="nav-item dropdown">
+			    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Phụ Kiện Nam</a>
+			    <div class="dropdown-menu">
+			      <a class="dropdown-item" href="../non.html">Nón</a>
+			      
+			      <a class="dropdown-item" href="../balo-tui.html">Balo-Túi Xách</a>
+			    </div>
+			</li>
+			<li class="nav-item dropdown">
+          <a class="nav-link" href="../giay-dep.html">Giày Dép</a>
+			</li>
+			<li class="nav-item dropdown">
+			    <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">Tài Khoản</a>
+			    
+			</li>
+			<li class="nav-item">
+			   	<a class="nav-link" href="../lienhe.html">Liên Hệ</a>
+			</li>
+			<li>
+				<form class="form-inline" action="#">
+					<input class="form-control mr-sm-2" type="text" placeholder="Áo thun , Quần ....">
+					<button class="btn btn-success" type="submit">Search</button>
+				</form>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<div class="container">
+	<div class="content col-sm-12 col-md-12">
+  		<div class="box-index">
+  			<h2> <a href="../index.html">TRANG CHỦ</a> / <a href="#">Quần Short</a> / <a href="#">Short 3</a> </h2>
+  			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-6" id="img-sp">
+
+					<div class="showContainer">
+						<div class="imageContainer" id="im_1">
+							<img src="../picture/quan/quan short/quan short 3-1.jpg" class="hinh">
+						</div>
+						<div class="imageContainer" id="im_2">
+							<img src="../picture/quan/quan short/quan short 3-2.jpg" class="hinh">
+						</div>
+						<div class="imageContainer" id="im_3">
+							<img src="../picture/quan/quan short/quan short 3-3.jpg" class="hinh">
+						</div>
+						<div class="navButton" id="prevs">&#10094;</div>
+						<div class="navButton" id="nexts">&#10095;</div>
+					</div>
+						
+
+
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6" id="inf-sp">
+					<h3>Quần Jean 3</h3>
+					<div class="row">
+						<div class="row-left">Mã sản phẩm:</div>
+						<div class="row-right">QS 3</div>
+						<div class="clear"></div>
+						<div class="row-left">Giá:</div>
+						<div class="row-right">280.000VND</div>
+						<div class="clear"></div>
+						<div class="row-left">Thương hiệu:</div>
+						<div class="row-right">Hàng Việt Nam</div>
+						<div class="clear"></div>
+						<div class="row-left">Size:</div>
+						<div class="row-right">28 29 30 31</div>
+						<div class="clear"></div>
+						<div class="row-left">Chất liệu:</div>
+						<div class="row-right">
+							<span>jean selvedge khá là chất lượng, form slim-fit mặc cực đẹp ! Lai biên selvedge đặc trưng xắn lên bao chất lun.
+							Chất jean cotton 100% ko co giãn☝️☝️</span>
+						</div>
+						<div class="clear"></div>
+					</div>
+						
+						<input type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-dathang" value="Đặt Hàng Nhanh">
+
+						     
+						  <div class="modal fade" id="modal-dathang">
+						    <div class="modal-dialog">
+						      <div class="modal-content">
+						      
+						         
+						        <div class="modal-header">
+						          <h4 class="modal-title">Điền thông tin để đặt hàng</h4>
+						          <button type="button" class="close" data-dismiss="modal">&times;</button>
+						        </div>
+						        
+						         
+						        <div class="modal-body">
+						        <form class="form-horizontal" id="fr-dat-hang" >
+									<div class="form-group">
+										<div class="row">
+											<label class="control-label col-md-4">Họ Và Tên:</label>
+								    	<div class="col-sm-8">
+								      		<input type="text" class="form-control" name="txthoten" id="txthoten" placeholder="Nhập Họ Và Tên">
+								    	</div>
+								  	</div>
+								  	</div>
+								  	<div class="form-group">
+								    	<div class="row">
+								    		<label class="control-label col-sm-4">Số Điện Thoại:</label>
+									    	<div class="col-sm-8"> 
+									      	<input type="text" class="form-control" name="txtsdt" id="txtsdt" placeholder="Nhập Số Điện Thoại">
+									    	</div>	
+										</div>	
+								    	</div>
+								  	<div class="form-group">
+								    	<div class="row">
+								    		<label class="control-label col-sm-4">Email:</label>
+								    	<div class="col-sm-8">
+								      		<input type="email" class="form-control" name="txtemail" id="txtemail" placeholder="Nhập email">
+								    	</div>
+								    	</div>
+								  	</div>
+									<div class="form-group">
+										<div class="row">
+									    	<label class="control-label col-sm-2">Size:</label>
+											<div class="col-sm-4"> 
+										      <select name="txtsize" id="txtsize" class="form-control" >
+												<option value="S">S</option>
+												<option value="M">M</option>
+												<option value="L">L</option>
+												<option value="XL">XL</option>
+											</select>
+										    </div>
+
+										    <label class="control-label col-sm-3">Số Lượng:</label>
+										    <div class="col-sm-3"> 
+										    	<input type="number" id="txtsl" name="txtsl" max="10" min="1">
+										    </div>
+										</div>
+								  	</div>
+								  	<div class="form-group">
+								    	<div class="row">
+								    		<label class="control-label col-sm-2">Giá:</label>
+									    	<div class="col-sm-4">
+									      		<select name="txtgia" id="txtgia" class="form-control" >
+												<option value="280000">280,000</option>
+											</select>
+									    	</div>
+									    	<label class="control-label col-sm-2"><b>TổngTiền:</b></label>
+									    	<div class="col-sm-4">
+									      		<p id="txttongtien">0 VNĐ</p>
+									    	</div>
+								    	</div>
+								  	</div>
+									<div class="form-group">
+										<div class="row">
+										<label class="control-label col-sm-4">Nội dung:</label>
+										<div class="col-sm-8">
+											<textarea name="txtnoidung" id="txtnoidung" class="col-sm-12" required placeholder="Nhập địa chỉ của khách hàng nhận."></textarea>
+										</div>
+										</div>
+									</div>
+									<div class="form-group"> 
+									    <div class="col-sm-2 offset-sm-5">
+									    	<button type="submit" class="btn btn-secondary">Gửi</button>
+									    </div>
+									</div>
+								</form>
+						        </div>
+						         
+						        <div class="modal-footer">
+						          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						        </div>
+						        
+						      </div>
+						    </div>
+						  </div>
+					<div class="sp-lien-quan">
+						<h3>Sản Phẩm Liên Quan</h3>
+						<div class="row">
+							<div class="col-md-4 col-sm-4 col-xs-4">
+								<a href="quan-tay-msp-4.html"><img src="../picture/quan/quan tay/quan tay 4-2.jpg" class="hinh"></a>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4">
+								<a href="quan-short-msp-5.html"><img src="../picture/quan/quan short/quan short 5-3.jpg" class="hinh"></a>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4">
+								<a href="quan-short-msp-3.html"><img src="../picture/quan/quan short/quan short 3-2.jpg" class="hinh"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+  		</div>
+
+
+
+
+  	</div>
+	
+	
+</div>
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+         
+        <div class="modal-header">
+          <div class="panel-heading">
+             <div class="panel-title text-center">
+               <a href="../index.html"><h1 class="title">Fashion T&D</h1></a>
+
+
+             </div>
+           </div>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+         
+        <div class="modal-body">
+          <div class="main-login main-center">
+          <form class="form-horizontal" id="fr-dang-nhap">
+            <div class="form-group">
+              <label for="username" class="cols-sm-2 control-label">Tài Khoản</label>
+              <div class="cols-sm-10">
+                <div class="input-group mb-3">
+                     <input type="text" name="txtusername" class="form-control" placeholder="Nhập tài khoản" aria-label="Username" aria-describedby="basic-addon1">
+               </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="password" class="cols-sm-2 control-label">Mật Khẩu</label>
+              <div class="cols-sm-10">
+                <div class="input-group mb-3">
+                  <input type="password" name="txtpassword" class="form-control" placeholder="Nhập mật khẩu" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+            </div>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-success btn-lg btn-block login-button">Sign in</button>
+            </div>
+            <div class="form-group">
+            <a href="https://accounts.google.com/signin/v2/sl/pwd?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="btn btn-lg btn-block btn btn-social btn-google">
+              <span class="fa fa-google"></span> Sign in with google
+            </a>
+              <a  href="https://www.facebook.com"class="btn btn-lg btn-block  btn-social btn-facebook">
+                <span class="fa fa-facebook"></span> Sign in with facebook
+              </a>
+            </div>
+            <div class="form-group">
+              <div class="row">
+              <a   href="" data-dismiss="modal" data-toggle="modal" data-target="#myModal1" class="col-sm-5 col-md-6 text-left">Đăng Kí</a>
+              <a href=""data-dismiss="modal" data-target="#myModal2" data-toggle="modal" class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0 text-right">Quên Mật Khẩu</a>
+            </div>
+            </div>
+          </form>
+        </div>
+        </div>
+         
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+<div class="modal fade" id="myModal1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+           
+          <div class="modal-header">
+            <div class="panel-heading">
+               <div class="panel-title text-center">
+                 <a href="../index.html"><h1 class="title">Fashion T&D</h1></a>
+               </div>
+             </div>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+           
+          <div class="modal-body">
+            <div class="main-login main-center">
+            <form class="form-horizontal" id="fr-dang-ky">
+              <div class="form-group">
+                <label for="username" class="cols-sm-2 control-label">Tài Khoản</label>
+                <div class="cols-sm-10">
+                  <div class="input-group mb-3">
+                       <input type="text" name="txtusername" class="form-control" placeholder="Nhập tài khoản" aria-label="Username" aria-describedby="basic-addon1">
+                 </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="password" class="cols-sm-2 control-label">Mật Khẩu</label>
+                <div class="cols-sm-10">
+                  <div class="input-group mb-3">
+                    <input type="password" id="txtpassword" name="txtpassword" class="form-control" placeholder="Nhập mật khẩu" aria-label="" aria-describedby="basic-addon1">
+                  </div>
+                  <label for="password" class="cols-sm-2 control-label">Nhập Lại Mật Khẩu</label>
+                <div class="cols-sm-10">
+                  <div class="input-group mb-3">
+                    <input type="password" name="txtrepassword" class="form-control" placeholder="Nhập lại mật khẩu" aria-label="" aria-describedby="basic-addon1">
+                  </div></div>
+              </div>
+              <div class="form-group">
+                
+              </div>
+              </div>
+              <div class="form-group">
+                <label for="password" class="cols-sm-2 control-label">Email</label>
+                <div class="cols-sm-10">
+                  <div class="input-group mb-3">
+                  
+                    <input type="text" name="txtemail" class="form-control" placeholder="Nhập email" aria-label="" aria-describedby="basic-addon1">
+                  </div>
+              </div>
+              </div>
+              <div class="form-group">
+                <label for="password" class="cols-sm-2 control-label">Số điện thoại</label>
+                <div class="cols-sm-10">
+                  <div class="input-group mb-3">
+                  
+                    <input type="text" name="txtphone" class="form-control" placeholder="Nhập số điện thoại" aria-label="" aria-describedby="basic-addon1">
+                  </div>
+              </div>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-success btn-lg btn-block login-button">Đăng ký</button>
+              </div>
+
+              <div class="form-group">
+                <div class="row">
+                <a  href="" data-dismiss="modal" data-target="#myModal2" data-toggle="modal" class="col-sm-5 col-md-6 text-left">Quên mật khẩu</a>
+                <a href="" data-dismiss="modal" data-target="#myModal" data-toggle="modal" class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0 text-right">Đăng nhập</a>
+              </div>
+              </div>
+            </form>
+          </div>
+          </div>
+           
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+</div>
+<div class="modal fade" id="myModal2">
+          <div class="modal-dialog">
+            <div class="modal-content">
+
+               
+              <div class="modal-header">
+                <div class="panel-heading">
+                   <div class="panel-title text-center">
+                     <a href="../index.html"><h1 class="title">Fashion T&D</h1></a>
+                   </div>
+                 </div>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+
+               
+              <div class="modal-body">
+                <div class="main-login main-center">
+                <form class="form-horizontal" id="fr-quen-mat-khau">
+
+                  <div class="form-group">
+                    <label for="password" class="cols-sm-2 control-label">Email</label>
+                    <div class="cols-sm-10">
+                      <div class="input-group mb-3">
+                        <input type="text" name="txtemail" class="form-control" placeholder="Nhập email" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                  </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="password" class="cols-sm-2 control-label">Số điện thoại</label>
+                    <div class="cols-sm-10">
+                      <div class="input-group mb-3">
+                      
+                        <input type="text" name="txtphone" class="form-control" placeholder="Nhập số điện thoại" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                  </div>
+                  </div>
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-success btn-lg btn-block login-button">Gửi</button>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="row">
+                    <a href="" data-dismiss="modal" data-target="#myModal" data-toggle="modal" class="col-sm-5 col-md-6 text-left">Đăng Nhập</a>
+                    <a href="" data-dismiss="modal" data-target="#myModal1" data-toggle="modal" class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0 text-right">Đăng kí</a>
+                  </div>
+                  </div>
+                </form>
+              </div>
+              </div>
+               
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+</div>
+<footer>
+	   	<div class="footera">
+			 <p>Kết nối với chúng tôi</p>
+			   <ul>
+				  <li><a class="iconsfooter" href="https://www.facebook.com/nguyenduy170898"><i class="fa fa-facebook"></i></a></li>
+				  <li><a class="iconsfooter" href="https://www.instagram.com/__otiboi/"><i class="fa fa-instagram"></i></a></li>
+				  <li><a class="iconsfooter" href="https://www.youtube.com"><i class="fa fa-youtube"></i></a></li>
+			   </ul>
+		  </div>
+
+    
+		<div class="footerc">
+			<div class="coppy-right">
+				<p>Copyright © 2018 Enter. Design by <a href="https://www.facebook.com/nguyenduy170898">Nguyễn Thành Duy</a> & <a href="https://www.facebook.com/aksahihi">Nguyễn Ngọc Thành</a>.
+				</p>
+			</div>
+			<div class="go-to-top">
+				<p><a href="#" >
+				&uarr; LÊN TRANG ĐẦU
+				</a></p>
+			</div>
+    </div>
+</footer>
+
+</body>
+</html>
